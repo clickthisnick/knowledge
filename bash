@@ -23,7 +23,7 @@ So this will only replace apple=true.
 
 Will produce.
 ```
-crabapple=false
+apple=false
 apple=false
 ```
 
