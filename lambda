@@ -1,0 +1,1 @@
+AWSLambdaVPCAccessExecutionRole -> Is the basic lambda redefined role that allows lambdas to create log groups and right log streams when they execute
