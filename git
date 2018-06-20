@@ -1,0 +1,11 @@
+Merge repos together
+
+```
+cd ../new-project
+git remote add old-project ../old-project
+git fetch old-project
+git checkout -b feature/merge-old-project
+git merge -S --allow-unrelated-histories old-project/master
+git push origin feature/merge-old-project
+git remote rm old-project
+```
