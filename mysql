@@ -1,0 +1,17 @@
+
+Lock down a user to a certain ip address:
+
+# See all the mysql users:
+SELECT * FROM mysql.user;
+
+# Create a new user that can login from anywhere:
+CREATE USER 'lala'@'%' IDENTIFIED BY 'blahblah';
+
+# Create a new user that can only login from a 10.xxx... ip:
+CREATE USER 'lala'@'10.%' IDENTIFIED BY 'blahblah';
+
+# Create a new user that can only login from localhost
+CREATE USER 'lala'@'localhost' IDENTIFIED BY 'blahblah';
+
+# Grant all privileges on a table to username who can login from any ip addresss
+GRANT ALL PRIVILEGES ON tablename.*  TO 'username'@'%';
