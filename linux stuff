@@ -2,3 +2,7 @@ https://www.linuxatemyram.com/
 
 
 ssh -o "ProxyCommand ssh poxyuser@proxy.machine nc -w 1 %h 22" targetuser@target.machine
+
+
+Find disk usage for /* directory
+du -Pshx /* 2>/dev/null
