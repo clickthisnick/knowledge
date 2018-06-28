@@ -1,0 +1,2 @@
+# debug with chrome debugger:
+node --inspect-brk test.js 
