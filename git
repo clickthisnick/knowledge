@@ -9,3 +9,14 @@ git merge -S --allow-unrelated-histories old-project/master
 git push origin feature/merge-old-project
 git remote rm old-project
 ```
+
+Merge the brances after the repo is merged
+```
+# in the old-project
+git format-patch origin/master --stdout > ~/dev/my-branch.patch
+
+# in new-project
+git apply --stat ~/dev/my-branch.patch
+git apply --check ~/dev/my-branch.patch
+git am --signoff < ~/dev/my-branch.patch
+```
