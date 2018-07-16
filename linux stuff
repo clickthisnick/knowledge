@@ -6,3 +6,8 @@ ssh -o "ProxyCommand ssh poxyuser@proxy.machine nc -w 1 %h 22" targetuser@target
 
 Find disk usage for /* directory
 du -Pshx /* 2>/dev/null
+
+To yum update: ecs-init and docker-ce can cause a lot of issues, better just to cycle the instance and have these update
+sudo yum update -y --exclude=ecs-init* --exclude=docker-ce*
+
+
