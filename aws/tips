@@ -1,0 +1,2 @@
+When you take an AMI of an ec2 instance and start up another ec2 instance with that AMI
+|-> Search for the private/public ip address of the previous ec2 instance in the security groups, it maybe the case that only those ips addresses can communicate with other services
