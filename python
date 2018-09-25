@@ -1,0 +1,8 @@
+           # Call a bash cmd from python and error out
+           # Like hado lint docker run
+           
+           try:
+                output = subprocess.check_output(CMD, stderr=subprocess.STDOUT, shell=True)
+            except subprocess.CalledProcessError as e:
+                print('Error:',e.output.decode())
+                sys.exit(1)
