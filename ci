@@ -1,0 +1,8 @@
+cancel redundant builds
+colored output
+formatted output
+save test results as build artifacts
+parallelize tests
+only lint diffs on base branch
+if tests pass should be no output
+no uneccessary noisy output
