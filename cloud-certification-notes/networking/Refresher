@@ -1,0 +1,13 @@
+Networking exists to ensure machines can communicate
+
+7-Layer OSI model was created to ensure machines with different specs/protocols can reliably communicate with each other
+
+7 - Application 
+6 - Presentation
+5 - Session - Ongoing sessions, allows to connect to machines and keep it up. Ports. 
+4 - Transport - TCP/UDP. TCP (3 way handshake retry/safe), UDP - Live streaming, no error handling/checking
+3 - Network, Communicate via IP address. Protocols - IP, IPX, ICMP (ping) - This layer doesn't handle errors.
+2 - Datalink - Communicate via frame. Source/Destination MAC Address. Handles errors or frame out of order
+1 - Physical - Ethernet/Wifi/Bluetooth. This layer knows how to send data and how to receive data.
+
+Each layer is self contained. Each layer has inputs and outputs.
